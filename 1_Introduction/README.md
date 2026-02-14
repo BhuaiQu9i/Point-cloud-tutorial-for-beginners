@@ -24,7 +24,7 @@ So the position of each points in the point cloud is described using the Cartesi
 
 
 ### 1. The disorder of point clouds
-Swapping any two pixels blocks of a two-dimensional image disrupts the original ordered structure,leading to changes in semantic information**as shown in the following [Fig. 1](#fig:disorder) and [Fig. 2](#fig:disord2)**.
+Swapping any two pixels blocks of a two-dimensional image disrupts the original ordered structure,leading to changes in semantic information as shown in the following **[Fig. 1](#fig:disorder)** and **[Fig. 2](#fig:disord2)**.
 <div align="center">
   <table border="0">
     <tr>
@@ -39,6 +39,22 @@ Swapping any two pixels blocks of a two-dimensional image disrupts the original 
         <img src="Image/Fig2.jpg" alt="Fig 2" style="width: 100%; height: auto; max-width: 400px;">
         <br>
         <strong>Fig. 2.</strong> Disordered after swapping
+      </td>
+    </tr>
+  </table>
+</div>
+
+However,when you exchange the two points "A" and "B" in the point cloud,you will be suprised to find that the shape of point cloud and its semantics have not changed(Only considering that the points only contain coordinate information),which is completely different from the picture.
+If you randomly select two points in **[Fig. 3](#fig:pointcloud)** and swap them,nothing will happend and everything will remain the same:the ground is still the ground,the table is still the desk.
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <td align="center">
+        <a id="fig:pointcloud"></a>
+        <img src="Image/Fig3.jpg" alt="Fig 3" style="width: 100%; height: auto; max-width: 400px;">
+        <br>
+        <strong>Fig. 3.</strong> Point cloud dataset
       </td>
     </tr>
   </table>
