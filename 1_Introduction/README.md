@@ -1,8 +1,8 @@
-## What is a point cloud and its characteristics?
+# What is a point cloud and its characteristics?
 
 In our everyday world, ordinary photos are made up of many **pixels**, which form a two-dimensional grid. Each pixel is filled with RGB color values in its corresponding area, creating a complete 2D image.
 
-**Now imagine this🤯:**
+## **Now imagine this🤯:**
 
 Divide the 1 × 1 × 1 meter space around you into a huge number of tiny little cubes (like slicing the entire space into millions of microscopic building blocks).  
 Then apply a simple replacement rule to these small cubes:
@@ -15,7 +15,7 @@ As a result, the object is recorded and represented as a collection of many poin
 
 This collection of points is what we call a **point cloud**.
 
-In short:  
+## In short:  
 **A point cloud is a set of discrete points in 3D space that together approximate the shape and surface of real-world objects.**
 
 So the position of each points in the point cloud is described using the Cartesian coordinate system $(X,Y,Z)$,sometimes including color information $(R,G,B)$ and so on.
@@ -24,9 +24,22 @@ So the position of each points in the point cloud is described using the Cartesi
 
 
 ### 1. The disorder of point clouds
-Swapping any two pixels blocks of a two-dimensional image disrupts the original ordered structure,leading to changes in semantic information,**as shown in the following [Fig1](#fig:disorder)**. 
-<a id="fig:disorder">
-    <div style="text-align: center;">
-        ![swapping two pixels in two-dimensional photo](Fig1.jpg)
-    </div>
-</a>
+Swapping any two pixels blocks of a two-dimensional image disrupts the original ordered structure,leading to changes in semantic information**as shown in the following [Fig. 1](#fig:disorder) and [Fig. 2](#fig:disord2)**.
+<div align="center">
+  <table border="0">
+    <tr>
+      <td align="center">
+        <a id="fig:disorder"></a>
+        <img src="Image/Fig1.jpg" alt="Fig 1" style="width: 100%; height: auto; max-width: 400px;">
+        <br>
+        <strong>Fig. 1.</strong> Original ordered structure
+      </td>
+      <td align="center">
+        <a id="fig:disord2"></a>
+        <img src="Image/Fig2.jpg" alt="Fig 2" style="width: 100%; height: auto; max-width: 400px;">
+        <br>
+        <strong>Fig. 2.</strong> Disordered after swapping
+      </td>
+    </tr>
+  </table>
+</div>
