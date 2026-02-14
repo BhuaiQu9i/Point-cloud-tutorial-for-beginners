@@ -25,8 +25,8 @@ So the position of each points in the point cloud is described using the Cartesi
 
 ### 1. The disorder of point clouds
 Swapping any two pixels blocks of a two-dimensional image disrupts the original ordered structure,leading to changes in semantic information,**as shown in the following [Fig1](#fig:disorder)**. 
-<div style="text-align: center;">
-    <a id="fig:disorder">
+<a id="fig:disorder">
+    <div style="text-align: center;">
         ![swapping two pixels in two-dimensional photo](Fig1.jpg)
-    </a>
-</div>
+    </div>
+</a>
