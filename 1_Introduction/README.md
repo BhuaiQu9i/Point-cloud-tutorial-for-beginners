@@ -45,6 +45,7 @@ Swapping any two pixels blocks of a two-dimensional image disrupts the original 
 </div>
 
 However,when you exchange the two points "A" and "B" in the point cloud,you will be suprised to find that the shape of point cloud and its semantics have not changed(Only considering that the points only contain coordinate information),which is completely different from the picture.
+
 If you randomly select two points in **[Fig. 3](#fig:pointcloud)** and swap them,nothing will happend and everything will remain the same:the ground is still the ground,the table is still the desk.
 
 <div align="center">
@@ -55,6 +56,29 @@ If you randomly select two points in **[Fig. 3](#fig:pointcloud)** and swap them
         <img src="Image/Fig3.jpg" alt="Fig 3" style="width: 100%; height: auto; max-width: 400px;">
         <br>
         <strong>Fig. 3.</strong> Point cloud dataset
+      </td>
+    </tr>
+  </table>
+</div>
+
+### 2. The non-uniformity of point clouds
+It's easy to understand that in the process of collecting data,objects closer to the sensor have a higher point cloud density,while objects farther away have a lower point cloud density.Moreover,due to the fact that mainstream collection techniques are based on light reflection,there are no points other than the surface of the object.
+
+**It should noted that sensor can only see the side of the object facing it facing it,and in a single data acquisition,the back and interior of the object are completely "vacuum zone".**
+<div align="center">
+  <table border="0">
+    <tr>
+      <td align="center">
+        <a id="fig:disorder"></a>
+        <img src="Image/Fig4.jpg" alt="Fig 4" style="width: 100%; height: 320px; max-width: 400px;">
+        <br>
+        <strong>Fig. 4.</strong> The side facing sensors
+      </td>
+      <td align="center">
+        <a id="fig:disord2"></a>
+        <img src="Image/Fig5.jpg" alt="Fig 5" style="width: 100%; height: 320px; max-width: 400px;">
+        <br>
+        <strong>Fig. 5.</strong> The side not facing the sensor have a "vacuum zone"
       </td>
     </tr>
   </table>
