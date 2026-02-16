@@ -46,7 +46,7 @@ Swapping any two pixels blocks of a two-dimensional image disrupts the original 
 
 However,when you exchange the two points "A" and "B" in the point cloud,you will be suprised to find that the shape of point cloud and its semantics have not changed(Only considering that the points only contain coordinate information),which is completely different from the picture.
 
-If you randomly select two points in **[Fig. 3](#fig:pointcloud)** and swap them,nothing will happend and everything will remain the same:the ground is still the ground,the table is still the desk.
+If you randomly select two points in **[Fig. 3](#fig:pointcloud)** and swap them,nothing will happend and everything will remain the same:the ground is still the ground,the table is still the table.
 
 <div align="center">
   <table border="0">
@@ -64,7 +64,7 @@ If you randomly select two points in **[Fig. 3](#fig:pointcloud)** and swap them
 ### 2. The non-uniformity of point clouds
 It's easy to understand that in the process of collecting data,objects closer to the sensor have a higher point cloud density,while objects farther away have a lower point cloud density.Moreover,due to the fact that mainstream collection techniques are based on light reflection,there are no points other than the surface of the object.
 
-**It should noted that sensor can only see the side of the object facing it facing it,and in a single data acquisition,the back and interior of the object are completely "vacuum zone".**
+**It should noted that sensor can only see the side of the object facing it,and in a single data acquisition,the back and interior of the object are completely "vacuum zone".**
 <div align="center">
   <table border="0">
     <tr>
@@ -83,3 +83,27 @@ It's easy to understand that in the process of collecting data,objects closer to
     </tr>
   </table>
 </div>
+
+### 3. Rotation and translation invariance
+when you rotate or translate a point cloud,the coordinates of points will change,but the category and properties of the object will not change.
+
+### 4. Contains multiple attributes
+In public dataset,you usually see some colored point clouds because in basic $(X,Y,Z)$,point cloud can also carry other related information,such as intensity,color,normal vectors,etc.The introduction of these additional information also expands the methods of subsequent point cloud processing. 
+<div align="center">
+  <table border="0">
+    <tr>
+      <td align="center">
+        <a id="fig:coloredPointCloud"></a>
+        <img src="Image/Fig6.jpg" alt="Fig 6" style="width: 100%; height: auto; max-width: 400px;">
+        <br>
+        <strong>Fig. 6.</strong> Point cloud with color
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+
+At this point,everyone already knows the basic characteristics of point clouds,In next chapter,I will explain the I/O operations of point clouds **<ins>(which are actually available in the Open3D document library)</ins>**
+
+So please refer to the offical documentation during the learning process:[[Open3D Doc]](https://www.open3d.org/docs/release/)
