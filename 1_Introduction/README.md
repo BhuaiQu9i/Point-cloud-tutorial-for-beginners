@@ -33,18 +33,18 @@ So the position of each point in the point cloud is described using the Cartesia
 
 Swapping any two pixels blocks of a two-dimensional image disrupts the original ordered structure, leading to changes in semantic information as shown in the following **[Fig. 1](#fig:disorder)** and **[Fig. 2](#fig:disord2)**.
 
-<div style="text-align: center; margin: 2em 0;">
-  <table border="0" style="width: 100%; max-width: 900px; margin: 0 auto;">
+<div align="center" style="margin: 2em 0;">
+  <table border="0" align="center">
     <tr>
-      <td style="text-align: center; padding: 10px;">
+      <td align="center" style="padding: 15px;">
         <a id="fig:disorder"></a>
-        <img src="Image/Fig1.jpg" alt="Fig 1" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img src="Image/Fig1.jpg" alt="Fig 1" style="max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
         <br><br>
         <strong>Fig. 1.</strong> Original ordered structure
       </td>
-      <td style="text-align: center; padding: 10px;">
+      <td align="center" style="padding: 15px;">
         <a id="fig:disord2"></a>
-        <img src="Image/Fig2.jpg" alt="Fig 2" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img src="Image/Fig2.jpg" alt="Fig 2" style="max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
         <br><br>
         <strong>Fig. 2.</strong> Disordered after swapping
       </td>
@@ -56,8 +56,8 @@ However, when you exchange the two points "A" and "B" in the point cloud, you wi
 
 If you randomly select two points in **[Fig. 3](#fig:pointcloud)** and swap them, nothing will happen and everything will remain the same: the ground is still the ground, the table is still the table.
 
-<div style="text-align: center; margin: 2em 0;">
-  <img src="Image/Fig3.jpg" alt="Fig 3" style="max-width: 80%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+<div align="center" style="margin: 2em 0;">
+  <img src="Image/Fig3.jpg" alt="Fig 3" style="max-width: 80%; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <br><br>
   <strong>Fig. 3.</strong> Point cloud dataset
 </div>
@@ -70,18 +70,18 @@ It's easy to understand that in the process of collecting data, objects closer t
 
 **It should be noted that sensors can only see the side of the object facing them, and in a single data acquisition, the back and interior of the object are completely "vacuum zone".**
 
-<div style="text-align: center; margin: 2em 0;">
-  <table border="0" style="width: 100%; max-width: 900px; margin: 0 auto;">
+<div align="center" style="margin: 2em 0;">
+  <table border="0" align="center">
     <tr>
-      <td style="text-align: center; padding: 10px;">
+      <td align="center" style="padding: 15px;">
         <a id="fig:visible"></a>
-        <img src="Image/Fig4.jpg" alt="Fig 4" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img src="Image/Fig4.jpg" alt="Fig 4" style="max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
         <br><br>
         <strong>Fig. 4.</strong> The side facing sensors
       </td>
-      <td style="text-align: center; padding: 10px;">
+      <td align="center" style="padding: 15px;">
         <a id="fig:vacuum"></a>
-        <img src="Image/Fig5.jpg" alt="Fig 5" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img src="Image/Fig5.jpg" alt="Fig 5" style="max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
         <br><br>
         <strong>Fig. 5.</strong> The side not facing the sensor have a "vacuum zone"
       </td>
@@ -101,8 +101,8 @@ When you rotate or translate a point cloud, the coordinates of points will chang
 
 In public datasets, you usually see some colored point clouds because in basic $(X,Y,Z)$, point cloud can also carry other related information, such as intensity, color, normal vectors, etc. The introduction of these additional information also expands the methods of subsequent point cloud processing.
 
-<div style="text-align: center; margin: 2em 0;">
-  <img src="Image/Fig6.jpg" alt="Fig 6" style="max-width: 80%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+<div align="center" style="margin: 2em 0;">
+  <img src="Image/Fig6.jpg" alt="Fig 6" style="max-width: 80%; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <br><br>
   <strong>Fig. 6.</strong> Point cloud with color
 </div>
@@ -115,7 +115,7 @@ At this point, everyone already knows the basic characteristics of point clouds.
 
 In the next chapter, I will explain the I/O operations of point clouds **<ins>(which are actually available in the Open3D document library)</ins>**.
 
-<div style="text-align: center; margin: 3em 0;">
+<div align="center" style="margin: 3em 0;">
   <a href="https://www.open3d.org/docs/release/" target="_blank" style="background-color: #4a90e2; color: white; padding: 14px 28px; text-decoration: none; border-radius: 8px; font-size: 1.1em; font-weight: bold; box-shadow: 0 4px 12px rgba(74,144,226,0.3);">
     📚 Open3D Official Documentation
   </a>
